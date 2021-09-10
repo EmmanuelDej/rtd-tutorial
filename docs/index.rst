@@ -4,6 +4,7 @@
    contain the root `toctree` directive.
 Lumache has its documentation hosted on Read the Docs.
 !Welcome to rtd-tutorial's documentation!
+This should just work seamlessly now.
 ========================================
 
 .. toctree::
