@@ -1,4 +1,4 @@
-.. image:: images/Hprc_banner_tamu.png
+##.. image:: images/Hprc_banner_tamu.png
 .. sidebar:: Optional Sidebar Title
    :subtitle: Optional Sidebar Subtitle
    Subsequent indented lines comprise
@@ -18,7 +18,7 @@
 ========================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: Contents:
    
 Indices and tables
