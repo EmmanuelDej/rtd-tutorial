@@ -34,3 +34,7 @@
    * **New to HPRC's resources?** `This page <https://hprc.tamu.edu/resources/>`_ explains the HPRC resources available to the TAMU community. Also see the `Policies Page <https://hprc.tamu.edu/policies/>`_ to better understand the rules and etiquette of cluster usage..
 
    * **Accessing the clusters:** All computer systems managed by the HPRC are available for use to TAMU faculty, staff, and students who require large-scale computing capabilities. The HPRC hosts the `Ada <https://hprc.tamu.edu/wiki/Ada>`_ , `Terra <https://hprc.tamu.edu/wiki/Terra>`_ , and `Grace <https://hprc.tamu.edu/wiki/Grace:Intro>`_  clusters at TAMU. To apply for or renew an HPRC account, please visit the `Account Applications <https://hprc.tamu.edu/apply/>`_  page. For information on how to obtain an allocation to run jobs on one of our clusters, please visit the `Allocations Policy <https://hprc.tamu.edu/policies/allocations.html>`_  page. *All accounts expire and must be renewed in September of each year.*
+
+**Using The Clusters**
+================
+   *QuickStart Guides:* For just the "need-to-know" information on getting started with our clusters, visit our QuickStart pages. Topics discussed include cluster access, file management, the batch system, setting up a software environment using modules, creating your own job files, and project account management. `Grace Quickstart Guide <https://hprc.tamu.edu/wiki/Grace:QuickStart>`_ , `Terra Quickstart Guide <https://hprc.tamu.edu/wiki/Terra:QuickStart>`_ .
