@@ -1,4 +1,4 @@
-..image:: images/Hprc_banner_tamu.png
+.. image:: images/Hprc_banner_tamu.png
 
 **Announcements**
 
