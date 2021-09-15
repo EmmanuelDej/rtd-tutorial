@@ -13,7 +13,7 @@
 **Announcements**
 ================
 
-* **Ada to Grace Migration:** Users should begin migrating from Ada to Grace now. Read more on our .. _Ada to Grace: http://docutils.sf.net/rst.html
+* **Ada to Grace Migration:** Users should begin migrating from Ada to Grace now. Read more on our .. _Ada_To_Grace: http://www.python.org/
 
 * **Grace Cluster Status:** Cluster deployed, currently in testing and early user access mode. 
 
