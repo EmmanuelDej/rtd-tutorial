@@ -21,4 +21,4 @@
 ::
    #SBATCH --gres=gpu:v100:1            #Request 1 GPU per node can be 1 or 2
    
-   #SBATCH --partition=gpu              #Request the GPU partition/queue``
+   #SBATCH --partition=gpu              #Request the GPU partition/queue
