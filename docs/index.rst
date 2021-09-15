@@ -1,10 +1,9 @@
-.. rtd-tutorial documentation master file, created by
-   sphinx-quickstart on Wed Sep  8 13:15:40 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-Lumache has its documentation hosted on Read the Docs.
-!Welcome to rtd-tutorial's documentation!
-This should just work seamlessly now.
+Announcements
+Ada to Grace Migration: Users should begin migrating from Ada to Grace now. Read more on our Ada to Grace migration FAQ.
+Grace Cluster Status: Cluster deployed, currently in testing and early user access mode.
+New GPU nodes in the Terra cluster: Four new GPU nodes are now available in the Terra Cluster. Each GPU node has two Intel Skylake Xeon Gold 5118 20-core processors, 192 GB of memory and two NVIDIA 32GB V100 GPUs. To use these new GPU nodes, please submit jobs to the gpu queue on Terra by including the following job directive in your job scripts:
+#SBATCH --gres=gpu:v100:1            #Request 1 GPU per node can be 1 or 2
+#SBATCH --partition=gpu              #Request the GPU partition/queue
 ========================================
 
 .. toctree::
