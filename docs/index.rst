@@ -13,7 +13,8 @@
 **Announcements**
 ================
 
-* **Ada to Grace Migration:** Users should begin migrating from Ada to Grace now. Read more on our `Ada to Grace FAQ<https://hprc.tamu.edu/wiki/HPRC:AdaGraceFAQ/>`_.
+* **Ada to Grace Migration:** Users should begin migrating from Ada to Grace now. 
+Read more on our `Ada to Grace FAQ<https://hprc.tamu.edu/wiki/HPRC:AdaGraceFAQ/>`_.
 
 * **Grace Cluster Status:** Cluster deployed, currently in testing and early user access mode. 
 
