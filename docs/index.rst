@@ -4,10 +4,16 @@
    Subsequent indented lines comprise
    the body of the sidebar, and are
    interpreted as body elements.
-   
-**Announcements**
 
-* **Ada to Grace Migration:** Users should begin migrating from Ada to Grace now. Read more on our [[:HPRC:AdaGraceFAQ | Ada to Grace migration FAQ]].
+.. toctree::
+   :maxdepth: 4
+   :caption: Contents:
+   
+
+**Announcements**
+================
+
+* **Ada to Grace Migration:** Users should begin migrating from Ada to Grace now. Read more on our .. _Ada to Grace: http://docutils.sf.net/rst.html
 
 * **Grace Cluster Status:** Cluster deployed, currently in testing and early user access mode. 
 
@@ -15,22 +21,4 @@
 
 #SBATCH --gres=gpu:v100:1            #Request 1 GPU per node can be 1 or 2
 #SBATCH --partition=gpu              #Request the GPU partition/queue
-========================================
 
-.. toctree::
-   :maxdepth: 4
-   :caption: Contents:
-   
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-* :ref:`Ada to Grace`
-
-Test for Tree
-================
-
-Treetester 1.1
--------------
