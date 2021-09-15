@@ -14,7 +14,10 @@
 ================
 
 * **Ada to Grace Migration:** Users should begin migrating from Ada to Grace now. Read more on our `Ada to Grace migration FAQ <https://hprc.tamu.edu/wiki/HPRC:AdaGraceFAQ>`_
+----------------
+
 * **Grace Cluster Status:** Cluster deployed, currently in testing and early user access mode. 
+----------------
 
 * **New GPU nodes in the Terra cluster: Four** new GPU nodes are now available in the Terra Cluster.  Each GPU node has two Intel Skylake Xeon Gold 5118 20-core processors, 192 GB of memory and two NVIDIA 32GB V100 GPUs. To use these new GPU nodes, please submit jobs to the '''gpu''' queue on Terra by including the following job directive in your job scripts:
 
@@ -24,11 +27,16 @@
    #SBATCH --gres=gpu:v100:1            #Request 1 GPU per node can be 1 or 2
    
    #SBATCH --partition=gpu              #Request the GPU partition/queue
+----------------
 
 **Getting an Account**
 ================
-https://hprc.tamu.edu/resources/
 
 * **Understanding HPRC:** For a brief overview of what services HPRC offers, see `this video <https://www.youtube.com/watch?v=rfqtDigwgMg&list=PLHR4HLly3i4YrkNWcUE77t8i-AkwN5AN8>`_ in our getting started series on YouTube.
+----------------
+
 * **New to HPRC's resources?** `This page <https://hprc.tamu.edu/resources/>`_ explains the HPRC resources available to the TAMU community. Also see the `Policies Page <https://hprc.tamu.edu/policies/>`_ to better understand the rules and etiquette of cluster usage..
+----------------
+
 * **Accessing the clusters:** All computer systems managed by the HPRC are available for use to TAMU faculty, staff, and students who require large-scale computing capabilities. The HPRC hosts the `Ada <https://hprc.tamu.edu/wiki/Ada>`_ , `Terra <https://hprc.tamu.edu/wiki/Terra>`_ , and `Grace <https://hprc.tamu.edu/wiki/Grace:Intro>`_  clusters at TAMU. To apply for or renew an HPRC account, please visit the `Account Applications <https://hprc.tamu.edu/apply/>`_  page. For information on how to obtain an allocation to run jobs on one of our clusters, please visit the `Allocations Policy <https://hprc.tamu.edu/policies/allocations.html>`_  page. *All accounts expire and must be renewed in September of each year.*
+----------------
