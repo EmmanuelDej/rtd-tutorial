@@ -13,7 +13,7 @@
 **Announcements**
 ================
 
-* **Ada to Grace Migration:** Users should begin migrating from Ada to Grace now. Read more on our Ada to Grace .. _FAQ: http://www.python.org/
+* **Ada to Grace Migration:** Users should begin migrating from Ada to Grace now. See the `Python home page <http://www.python.org>`_ for info.
 * **Grace Cluster Status:** Cluster deployed, currently in testing and early user access mode. 
 
 * **New GPU nodes in the Terra cluster: Four** new GPU nodes are now available in the Terra Cluster.  Each GPU node has two Intel Skylake Xeon Gold 5118 20-core processors, 192 GB of memory and two NVIDIA 32GB V100 GPUs. To use these new GPU nodes, please submit jobs to the '''gpu''' queue on Terra by including the following job directive in your job script:
