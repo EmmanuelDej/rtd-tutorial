@@ -17,7 +17,9 @@
    :caption: Contents:
 
 
-
+.. sidebar:: Optional Sidebar Title
+   :subtitle: Optional Sidebar Subtitle
+   
 Indices and tables
 ==================
 
