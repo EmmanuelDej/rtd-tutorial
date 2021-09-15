@@ -1,5 +1,4 @@
-{{ TextBox 
-| content = {{TitleBar | align=center | title=Announcements }}
+**Announcements**
 * '''Ada to Grace Migration: ''' Users should begin migrating from Ada to Grace now. Read more on our [[:HPRC:AdaGraceFAQ | Ada to Grace migration FAQ]].
 
 * '''Grace Cluster Status: ''' Cluster deployed, currently in testing and early user access mode. 
