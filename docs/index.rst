@@ -37,4 +37,4 @@
 
 **Using The Clusters**
 ================
-   *QuickStart Guides:* For just the "need-to-know" information on getting started with our clusters, visit our QuickStart pages. Topics discussed include cluster access, file management, the batch system, setting up a software environment using modules, creating your own job files, and project account management. `Grace Quickstart Guide <https://hprc.tamu.edu/wiki/Grace:QuickStart>`_ , `Terra Quickstart Guide <https://hprc.tamu.edu/wiki/Terra:QuickStart>`_ .
+   * **QuickStart Guides:** For just the "need-to-know" information on getting started with our clusters, visit our QuickStart pages. Topics discussed include cluster access, file management, the batch system, setting up a software environment using modules, creating your own job files, and project account management. `Grace Quickstart Guide <https://hprc.tamu.edu/wiki/Grace:QuickStart>`_ , `Terra Quickstart Guide <https://hprc.tamu.edu/wiki/Terra:QuickStart>`_ .
