@@ -24,3 +24,10 @@
    #SBATCH --gres=gpu:v100:1            #Request 1 GPU per node can be 1 or 2
    
    #SBATCH --partition=gpu              #Request the GPU partition/queue
+
+**Getting an Account**
+================
+
+* **Understanding HPRC:** For a brief overview of what services HPRC offers, see `this video <https://www.youtube.com/watch?v=rfqtDigwgMg&list=PLHR4HLly3i4YrkNWcUE77t8i-AkwN5AN8>`_ in our getting started series on YouTube.
+* **New to HPRC's resources?** This page explains the HPRC resources available to the TAMU community. Also see the Policies Page to better understand the rules and etiquette of cluster usage..
+* **Accessing the clusters:** All computer systems managed by the HPRC are available for use to TAMU faculty, staff, and students who require large-scale computing capabilities. The HPRC hosts the Ada, Terra, and Grace clusters at TAMU. To apply for or renew an HPRC account, please visit the Account Applications page. For information on how to obtain an allocation to run jobs on one of our clusters, please visit the Allocations Policy page. All accounts expire and must be renewed in September of each year.
