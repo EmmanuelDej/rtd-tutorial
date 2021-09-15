@@ -1,5 +1,10 @@
 .. image:: images/Hprc_banner_tamu.png
-
+.. sidebar:: Optional Sidebar Title
+   :subtitle: Optional Sidebar Subtitle
+   Subsequent indented lines comprise
+   the body of the sidebar, and are
+   interpreted as body elements.
+   
 **Announcements**
 
 * **Ada to Grace Migration:** Users should begin migrating from Ada to Grace now. Read more on our [[:HPRC:AdaGraceFAQ | Ada to Grace migration FAQ]].
@@ -15,10 +20,6 @@
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-
-.. sidebar:: Optional Sidebar Title
-   :subtitle: Optional Sidebar Subtitle
    
 Indices and tables
 ==================
