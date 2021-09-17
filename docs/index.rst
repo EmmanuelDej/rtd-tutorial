@@ -43,7 +43,7 @@
 
 
 +-------------------------------+   +--------------------------------------+ 
-| Grace / Slurm Batch Pages     |   |Terra / Slurm Batch Pages             |
+| Grace / Slurm Batch Pages     |   | Terra / Slurm Batch Pages            |
 +===============================+   +======================================+ 
 | Complete Grace Batch Page     |   |  Complete Terra Batch Page           | 
 +-------------------------------+   +--------------------------------------+ 
