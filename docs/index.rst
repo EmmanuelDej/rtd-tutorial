@@ -62,7 +62,7 @@ https://hprc.tamu.edu/wiki/Grace:Batch
 
 **Further Reading**
 ================
-   * Ada User Guide
+   * Ada User Guide  * Hardware Overview
    * Terra User Guide
    * Grace User Guide
    * Workstations
