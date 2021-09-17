@@ -5,9 +5,6 @@
    the body of the sidebar, and are
    interpreted as body elements.
 
-.. toctree::
-   :maxdepth: 4
-   :caption: Contents:
    
 
 **Announcements**
