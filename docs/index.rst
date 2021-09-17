@@ -44,12 +44,12 @@
 .. table::
    :align: right
 
-   +-------------------------------+-----------------------------+ 
-   | Grace / Slurm Batch Pages     | Terra / Slurm Batch Pages   |
-   +===============================+=============================+ 
-   | Complete Grace Batch Page     |  Complete Terra Batch Page  | 
-   +-------------------------------+-----------------------------+ 
-   | Job Submission (sbatch)       | Job Submission (sbatch)     | 
-   +-------------------------------+-----------------------------+ 
-   | Grace Queue Structure         | Terra Queue Structure.      | 
-   +-------------------------------+-----------------------------+
+   +-------------------------------+--------------------------------------+ 
+   | Grace / Slurm Batch Pages     | Terra / Slurm Batch Pages            |
+   +===============================+======================================+ 
+   | Complete Grace Batch Page     |  Complete Terra Batch Page           | 
+   +-------------------------------+--------------------------------------+ 
+   | Job Submission (sbatch)       | Job Submission (sbatch)              | 
+   +-------------------------------+--------------------------------------+ 
+   | Grace Queue Structure         | Terra Queue Structure.               | 
+   +-------------------------------+--------------------------------------+
