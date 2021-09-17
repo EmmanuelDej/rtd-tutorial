@@ -43,7 +43,7 @@
 `Complete Terra Batch Page <https://hprc.tamu.edu/wiki/Terra:Batch>`_ 
 https://hprc.tamu.edu/wiki/Grace:Batch
    +-----------------------------------------------------------------------------------+-----------------------------------------------------------+ 
-   | Grace / Slurm Batch Pages                                                         | `Complete Terra Batch Page <https://hprc.tamu.edu/wiki/Terra:Batch>`_                        |
+   | Grace / Slurm Batch Pages                                                         |`Complete Terra Batch Page <https://hprc.tamu.edu/wiki/Terra:Batch>`_ |
    +===================================================================================+===========================================================+ 
    | `Complete Grace Batch Page <https://hprc.tamu.edu/wiki/Grace:Batch>`_             |  Complete Terra Batch Page                                | 
    +-----------------------------------------------------------------------------------+-----------------------------------------------------------+
