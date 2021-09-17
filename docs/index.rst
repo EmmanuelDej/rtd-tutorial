@@ -62,21 +62,21 @@ https://hprc.tamu.edu/wiki/Grace:Batch
 
 **Further Reading**
 ================
-   * Ada User Guide     |* Hardware Overview |* Software Overview
-   * Terra User Guide
-   * Grace User Guide
-   * Workstations
-   Hardware Overview
-   Ada Hardware
-   Terra Hardware
-   Grace Hardware
-   TAMU OnDemand Portal
-   Software Overview
-   Loading Software
-   Check Software License Availability
-   Software Policies
-   Usage Policies
-   Account Application
-   Manage SUs (Transfers)
-   Contact Us
-   Youtube Channel
+ *  Ada User Guide
+ *  Terra User Guide
+ *  Grace User Guide
+ *  Workstations
+ *  Hardware Overview
+ *  Ada Hardware
+ *  Terra Hardware
+ *  Grace Hardware
+ *  TAMU OnDemand Portal
+ *  Software Overview
+ *  Loading Software
+ *  Check Software License Availability
+ *  Software Policies
+ *  Usage Policies
+ *  Account Application
+ *  Manage SUs (Transfers)
+ *  Contact Us
+ *  Youtube Channel
