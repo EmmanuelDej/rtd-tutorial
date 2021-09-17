@@ -40,7 +40,7 @@
    * **QuickStart Guides:** For just the "need-to-know" information on getting started with our clusters, visit our QuickStart pages. Topics discussed include cluster access, file management, the batch system, setting up a software environment using modules, creating your own job files, and project account management. `Grace Quickstart Guide <https://hprc.tamu.edu/wiki/Grace:QuickStart>`_ , `Terra Quickstart Guide <https://hprc.tamu.edu/wiki/Terra:QuickStart>`_ .
 
    * **Batch Jobs:** As a shared resource between many users, each cluster must employ a batch system to schedule a time for each user's job to run. Without such a system, one user could use a disproportionate amount of resources, and cause other users' work to stall. Ada's batch system is called LSF, and Terra's batch system is called SLURM. While similar in function, they differ in their finer details, such as job file syntax. Information relevant to each system can be found below.
-`Common Problems and Quick Solutions Page <https://hprc.tamu.edu/wiki/HPRC:CommonProblems>`_ 
+`here. <https://www.youtube.com/channel/UCgeDEHE5GwkxYUGS0FDLmPw?disable_polymer=true>`_ 
 https://hprc.tamu.edu/wiki/Grace:Batch
    +----------------------------------------------------------+---------------------------------------------------------+ 
    | Grace / Slurm Batch Pages                                | Terra / Slurm Batch Pages                               |
@@ -55,3 +55,10 @@ https://hprc.tamu.edu/wiki/Grace:Batch
    Creating your own batch jobs: the `tamubatch Page <https://hprc.tamu.edu/wiki/SW:tamubatch>`_ provides information on how to use tamubatch to create and submit jobs easily.
    
   * **Troubleshooting:** While we cannot predict all bugs and errors, some issues on our clusters are common enough to catalog. See the `Common Problems and Quick Solutions Page <https://hprc.tamu.edu/wiki/HPRC:CommonProblems>`_ for a small collection of the most prevalent issues. For further assistance, users can contact **help@hprc.tamu.edu** to open a support ticket.
+  
+**HPRC's YouTube Channel**
+================
+   * **Prefer visual learning?** HPRC has launched its official YouTube channel where you can find video versions of our help guides, recordings of our short courses, and more! Subscribe `here. <https://www.youtube.com/channel/UCgeDEHE5GwkxYUGS0FDLmPw?disable_polymer=true>`_ 
+
+**Further Reading**
+================
