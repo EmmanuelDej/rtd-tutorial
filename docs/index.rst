@@ -41,12 +41,12 @@
 
    * **Batch Jobs:** As a shared resource between many users, each cluster must employ a batch system to schedule a time for each user's job to run. Without such a system, one user could use a disproportionate amount of resources, and cause other users' work to stall. Ada's batch system is called LSF, and Terra's batch system is called SLURM. While similar in function, they differ in their finer details, such as job file syntax. Information relevant to each system can be found below.
    
-+-------------------------------+-----------------------------+ 
-| Grace / Slurm Batch Pages 1   | Terra / Slurm Batch Pages 2 |
-+===============================+=============================+ 
-| Complete Grace Batch Page     |  Complete Terra Batch Page  | 
-+-------------------------------+-----------------------------+ 
-| Job Submission (sbatch)       | Job Submission (sbatch)     | 
-+-------------------------------+-----------------------------+ 
-| Grace Queue Structure         | Terra Queue Structure.      | 
-+-------------------------------+-----------------------------+
+                                                +-------------------------------+-----------------------------+ 
+                                                | Grace / Slurm Batch Pages     | Terra / Slurm Batch Pages   |
+                                                +===============================+=============================+ 
+                                                | Complete Grace Batch Page     |  Complete Terra Batch Page  | 
+                                                +-------------------------------+-----------------------------+ 
+                                                | Job Submission (sbatch)       | Job Submission (sbatch)     | 
+                                                +-------------------------------+-----------------------------+ 
+                                                | Grace Queue Structure         | Terra Queue Structure.      | 
+                                                +-------------------------------+-----------------------------+
