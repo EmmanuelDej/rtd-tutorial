@@ -47,7 +47,7 @@ https://hprc.tamu.edu/wiki/Grace:Batch
    +==========================================================+=========================================================+ 
    | `Complete Grace Batch Page <https://u.tamu.edu/GBatch>`_ |`Complete Terra Batch Page <https://u.tamu.edu/TBatch>`_ | 
    +----------------------------------------------------------+---------------------------------------------------------+
-   | `Job Submission (sbatch) <https://u.tamu.edu/GSBatch>`_  |`Job Submission (sbatch) <https://u.tamu.edu/GSBatch>`_  +               
+   | `Job Submission (sbatch) <https://u.tamu.edu/GSBatch>`_  |`Job Submission (sbatch) <https://u.tamu.edu/TSBatch>`_  |               
    +----------------------------------------------------------+---------------------------------------------------------+ 
    | `Grace Queue Structure <https://u.tamu.edu/GBQueue>`_    | `Terra Queue Structure <https://u.tamu.edu/TBQueue>`_   | 
    +----------------------------------------------------------+---------------------------------------------------------+
