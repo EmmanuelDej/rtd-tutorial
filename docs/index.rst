@@ -42,7 +42,7 @@
    * **Batch Jobs:** As a shared resource between many users, each cluster must employ a batch system to schedule a time for each user's job to run. Without such a system, one user could use a disproportionate amount of resources, and cause other users' work to stall. Ada's batch system is called LSF, and Terra's batch system is called SLURM. While similar in function, they differ in their finer details, such as job file syntax. Information relevant to each system can be found below.
 
 .. table:: center
-   :align: center
+   :class: align-center
 +-------------------------------+--------------------------------------+ 
 | Grace / Slurm Batch Pages     | Terra / Slurm Batch Pages            |
 +===============================+======================================+ 
