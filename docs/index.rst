@@ -72,31 +72,11 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: Grace
-
+   :caption: User Guides
    
-**Grace Guide**
-================
-* Quick Start Guide
-* Key Policies
-* Hardware Summary
-* Access
-* Computing Environment
-* File Systems, Quotas and File Transfers
-* Compiling and Running Programs
-* Batch Job Translation Guide
-* Batch Processing (Slurm)
-* Introduction
-* Building Job Files
-* Batch Job Submission
-* Batch Job Examples
-* Batch Queues
-* Advanced Batch Documentation
-* Exercises
-* Special Purpose Batch Jobs
-* Remote Visualization (Using GUIs)
-* Running Large Number of commands (Using tamulauncher)
-* Numerical Libraries
-* Math Kernel Library
-* Knitro
-* Bioinformatics Tools
+   Grace
+   Terra
+   OOD Portal
+   Galaxy
+
+
