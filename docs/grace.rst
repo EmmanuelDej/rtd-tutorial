@@ -22,4 +22,4 @@ Quick Start Guide
   
 Deployment Status
 -----------------
-*Cluster deployed, currently in testing and early user access mode.*
+**Cluster deployed, currently in testing and early user access mode.**
