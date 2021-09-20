@@ -74,9 +74,9 @@
    :maxdepth: 2
    :caption: User Guides
    
-   Grace
-   Terra
-   OOD Portal
-   Galaxy
+   grace
+   terra
+   ood portal
+   galaxy
 
 
