@@ -23,7 +23,7 @@ Users on **Mac** and **Linux/Unix** should use whatever SSH-capable terminal is 
 
 .. code-block:: php
 
-  [user1@localhost ~]$ <b>ssh [NetID]@grace.hprc.tamu.edu<b>
+  [user1@localhost ~]$ <b>ssh [NetID]@grace.hprc.tamu.edu</b>
 
 .. tip::
   In this example [user1@localhost ~]$ represents the command prompt on your local machine. 
