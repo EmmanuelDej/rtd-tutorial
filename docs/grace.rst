@@ -3,23 +3,6 @@
 Grace
 =====
 
-Quick Start Guide
------------------
-#. Grace Quickstart Guide
-  #. Deployment Status
-  #. Grace Usage Policies
-  #. Accessing Grace
-    #. Off Campus Accessing
-  #. Navigating Grace and Storage Quotas
-  #. Transferring Files
-    #. Reliably Transferring Large Files
-  #. Managing Project Accounts
-  #. Finding Software
-  #. Running Your Program / Preparing a Job File
-  #. Submitting and Monitoring Jobs
-  #. tamubatch
-  #. Graphic User Interfaces (Visualization)
-  
 Deployment Status
 -----------------
 **Cluster deployed, currently in testing and early user access mode.**
@@ -29,3 +12,17 @@ General Usage Policies
 **Access to Grace is granted with the condition that you will understand and adhere to all TAMU HPRC and Grace-specific policies.**
 
 General policies can be found on the HPRC Policies page.
+
+Accessing Grace
+---------------
+Most access to Grace is done via a secure shell session. In addition, two-factor authentication is required to login to any cluster.
+
+Users on Windows computers use either PuTTY or MobaXterm. If MobaXterm works on your computer, it is usually easier to use. When starting an ssh session in PuTTY, choose the connection type 'SSH', select port 22, and then type the hostname 'grace.hprc.tamu.edu'. For MobaXterm, select 'Session', 'SSH', and then remote host 'grace.hprc.tamu.edu'. Check the box to specify username and type your NetID. After selecting 'Ok', you will be prompted for Duo Two Factor Authentication. For more detailed instructions, visit the Two Factor Authentication page.
+
+Users on Mac and Linux/Unix should use whatever SSH-capable terminal is available on their system. The command to connect to Grace is as follows. Be sure to replace [NetID] with your TAMU NetID.
+
+Off Campus Access
+*****************
+Please visit this page to find information on accessing Grace remotely.
+
+For more detailed instructions on how to access our systems, please see the HPRC Access page.
