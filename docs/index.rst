@@ -69,6 +69,7 @@
  *  Manage SUs (Transfers)
  *  Contact Us
  *  Youtube Channel
+ *  Test Edit
 
 .. toctree::
    :maxdepth: 2
