@@ -19,3 +19,7 @@ Quick Start Guide
   #. Submitting and Monitoring Jobs
   #. tamubatch
   #. Graphic User Interfaces (Visualization)
+  
+Deployment Status
+-----------------
+*Cluster deployed, currently in testing and early user access mode.*
