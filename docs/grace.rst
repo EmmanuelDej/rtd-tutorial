@@ -21,9 +21,9 @@ Users on **Windows** computers use either PuTTY or MobaXterm. If MobaXterm works
 
 Users on **Mac** and **Linux/Unix** should use whatever SSH-capable terminal is available on their system. The command to connect to Grace is as follows. Be sure to replace [NetID] with your TAMU NetID.
 
-.. text-block:: php
+.. code-block:: php
 
-  [user1@localhost ~]$ **ssh [NetID]@grace.hprc.tamu.edu**
+  [user1@localhost ~]$ <b>ssh [NetID]@grace.hprc.tamu.edu<b>
 
 .. tip::
   In this example [user1@localhost ~]$ represents the command prompt on your local machine. 
