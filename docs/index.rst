@@ -70,7 +70,11 @@
  *  Contact Us
  *  Youtube Channel
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Grace
 
+   
 **Grace Guide**
 ================
 * Quick Start Guide
