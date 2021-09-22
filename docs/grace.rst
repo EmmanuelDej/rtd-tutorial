@@ -35,3 +35,47 @@ Off Campus Access
 Please visit `this page <https://hprc.tamu.edu/wiki/HPRC:Remote_Access>`_  to find information on accessing Grace remotely.
 
 For more detailed instructions on how to access our systems, please see the `HPRC Access page <https://hprc.tamu.edu/wiki/HPRC:Access>`_ .
+
+Navigating Grace and Storage Quotas
+-----------------------------------
+When you first access Grace, you will be within your *home* directory. This directory has smaller storage quotas and should not be used for general purpose.
+
+You can navigate to your *home* directory with the following command:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ cd /home/NetID
+  
+Your *scratch* directory has more storage space than your *home* directory and is recommended for general purpose use. You can navigate to your *scratch* directory with the following command:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ cd /scratch/user/NetID
+  
+You can navigate to *scratch* or *home* easily by using their respective environment variables.
+
+Navigate to *scratch* with the following command:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ cd $SCRATCH
+  
+Navigate to *home* with the following command:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ cd $HOME
+  
+.. note::
+  Your *scratch* directory is restricted to 1TB/250,000 files of storage. This storage quota is **expandable** upon request. A user's *scratch* directory is **NOT**  backed up.
+
+  Your *home* directory is restricted to 10GB/10,000 files of storage. This storage quota is **not expandable**. A user's *home* directory is backed up on a nightly basis.
+  
+You can see the current status of your storage quotas with:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ showquota
+  
+If you need a storage quota increase, please contact us with justification and the expected length of time that you will need the quota increase.
+
