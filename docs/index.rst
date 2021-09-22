@@ -73,12 +73,9 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: HPRC Useful Links
+   :caption: HPRC
    
-   HPRC Home Page
-   Wiki Home Page
-   New User Info
-   Contact Us
+   hprc useful links
    
 .. toctree::
    :maxdepth: 2
