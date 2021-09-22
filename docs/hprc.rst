@@ -1,4 +1,4 @@
-.. _hprc useful links:
+.. _hprc:
 
 HPRC
 ====
