@@ -70,11 +70,12 @@
  *  Contact Us
  *  Youtube Channel
 
+
 .. toctree::
    :maxdepth: 2
    :caption: HPRC
    
-   HPRC
+   hprc
    
 .. toctree::
    :maxdepth: 2
