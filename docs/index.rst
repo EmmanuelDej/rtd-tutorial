@@ -73,6 +73,11 @@
 
 .. toctree::
    :maxdepth: 2
+   
+   HPRC Home Page
+   
+.. toctree::
+   :maxdepth: 2
    :caption: User Guides
    
    grace
