@@ -73,9 +73,9 @@
 
 .. toctree::
    :maxdepth: 2
-   :caption: HPRC Useful Links
+   :caption: HPRC
    
-   hprc
+   HPRC
    
 .. toctree::
    :maxdepth: 2
