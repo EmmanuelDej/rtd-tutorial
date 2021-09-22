@@ -79,3 +79,25 @@ You can see the current status of your storage quotas with:
   
 If you need a storage quota increase, please contact us with justification and the expected length of time that you will need the quota increase.
 
+Transferring Files
+------------------
+Files can be transferred to Grace using the scp command or a file transfer program.
+
+Our users most commonly utilize:
+
+* `WinSCP <https://winscp.net/eng/download.php>`_  - Straightforward, legacy
+* `FileZilla Client <https://filezilla-project.org/>`_  - Easy to use, additional features, available on most platforms
+* `MobaXterm Graphical SFTP <https://mobaxterm.mobatek.net/features.html>`_  - Included with MobaXterm
+
+.. tip:: 
+  While GUIs are acceptable for file transfers, the cp and scp commands are much quicker and may significantly benefit your workflow.
+
+Reliably Transferring Large Files
+*********************************
+For files larger than several GB, you will want to consider the use of a more fault-tolerant utility such as rsync.
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ rsync -av [-z] localdir/ userid@remotesystem:/path/to/remotedir/
+  
+An rsync example can be seen on the `Ada Fast Transfer <https://hprc.tamu.edu/wiki/Ada:Fast_Data_Transfer#Data_transfer_using_rsync>`_  page.
