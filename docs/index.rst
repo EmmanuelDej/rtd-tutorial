@@ -74,7 +74,7 @@
 .. toctree::
    :maxdepth: 2
    
-   HPRC Home Page
+   `HPRC Home Page <https://hprc.tamu.edu/>`_
    
 .. toctree::
    :maxdepth: 2
