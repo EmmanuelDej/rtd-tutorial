@@ -208,3 +208,52 @@ Note: If your job file has been written on an older Mac or DOS workstation, you 
 More information on **job options** can be found in the `Building Job Files <https://hprc.tamu.edu/wiki/Grace:Batch#Building_Job_Files>`_ section of the `Grace Batch <https://hprc.tamu.edu/wiki/Grace:Batch>`_  page.
 
 More information on **dos2unix** can be found on the `dos2unix <https://hprc.tamu.edu/wiki/SW:dos2unix>`_  section of the `HPRC Available Software <https://hprc.tamu.edu/wiki/SW>`_  page.
+
+Submitting and Monitoring Jobs
+------------------------------
+Once you have your job file ready, it is time to submit your job. You can submit your job to slurm with the following command:
+
+.. code-block:: php
+  [NetID@grace1 ~]$ sbatch MyJob.slurm
+  Submitted batch job 3606
+ 
+After the job has been submitted, you are able to monitor it with several methods. To see the status of all of your jobs, use the following command:
+
+.. code-block:: php
+  [NetID@grace1 ~]$ squeue -u NetID
+  JOBID       NAME                USER                    PARTITION   NODES CPUS STATE       TIME        TIME_LEFT   START_TIME           REASON      NODELIST            
+  3606        myjob2              NetID                   short       1     3    RUNNING     0:30        00:10:30    2016-11-27T23:44:12  None        tnxt-[0340] 
+  
+To see the status of one job, use the following command, where XXXX is the JobID:
+
+.. code-block:: php
+  [NetID@grace1 ~]$ squeue --job XXXX
+  JOBID       NAME                USER                    PARTITION   NODES CPUS STATE       TIME        TIME_LEFT   START_TIME           REASON      NODELIST            
+  XXXX        myjob2              NetID                   short       1     3    RUNNING     0:30        00:10:30    2016-11-27T23:44:12  None        tnxt-[0340]  
+
+To cancel a job, use the following command, where XXXX is the JobID:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ scancel XXXX
+  
+More information on  `Job Submission <https://hprc.tamu.edu/wiki/Grace:Batch#Job_Submission>`_  and  `Job Monitoring <https://hprc.tamu.edu/wiki/Grace:Batch#Job_Monitoring_and_Control_Commands>`_  Slurm jobs can be found at the `Grace Batch System <https://hprc.tamu.edu/wiki/Grace:Batch>`_  page.
+
+tamubatch
+---------
+**tamubatch** is an automatic batch job script that submits jobs for the user without the need of writing a batch script on the clusters. The user just needs to provide the executable commands in a text file and tamubatch will automatically submit the job to the cluster. There are flags that the user may specify which allows control over the parameters for the job submitted.
+
+*tamubatch is still in beta and has not been fully developed. Although there are still bugs and testing issues that are currently being worked on, tamubatch can already submit jobs to both the clusters if given a file of executable commands.*
+
+For more information, `visit this page. <https://hprc.tamu.edu/wiki/SW:tamubatch>`_ 
+
+Graphic User Interfaces (Visualization)
+---------------------------------------
+The use of GUIs on Grace is a more complicated process than running non-interactive jobs or doing resource-light interactive processing.
+
+You have **two options** for using GUIs on Grace.
+
+The **first option** is to use the `Open On Demand Portal <https://portal.hprc.tamu.edu/>`_ ,which is a web interface to our clusters. Users must be connected to the campus network either directly or via VPN to access the portal. More information can be found `here <https://hprc.tamu.edu/wiki/SW:Portal>`_ , or on our `YouTube channel <https://www.youtube.com/watch?v=dqa2ZzsEmQs&list=PLHR4HLly3i4aJJDxKTZIpxyJG6uSqgAgd/>`_ 
+
+The **second option** is to run on the login node. When doing this, you **must** observe the fair-use policy of login node usage. Users commonly violate these policies by accident, resulting in terminated processes, confusion, and warnings from our admins.
+
