@@ -5,7 +5,7 @@ Terra
 
 Terra Usage Policies
 ----------------------
-**Access to Terra is granted with the condition that you will understand and adhere to all TAMU HPRC and Grace-specific policies.**
+**Access to Terra is granted with the condition that you will understand and adhere to all TAMU HPRC and Terra-specific policies.**
 
 General policies can be found on the `HPRC Policies Page <https://hprc.tamu.edu/policies/>`_ .
 
@@ -15,9 +15,9 @@ Accessing Terra
 ---------------
 Most access to Terra is done via a secure shell session. In addition, **two-factor authentication** is required to login to any cluster.
 
-Users on **Windows** computers use either `Puttty <http://www.putty.org/>`_ or `MobaXterm <http://mobaxterm.mobatek.net/>`_ . If MobaXterm works on your computer, it is usually easier to use. When starting an ssh session in PuTTY, choose the connection type 'SSH', select port 22, and then type the hostname 'grace.hprc.tamu.edu'. For MobaXterm, select 'Session', 'SSH', and then remote host 'grace.hprc.tamu.edu'. Check the box to specify username and type your NetID. After selecting 'Ok', you will be prompted for Duo Two Factor Authentication. For more detailed instructions, visit the `Two Factor Authentication <https://hprc.tamu.edu/wiki/Two_Factor#MobaXterm/>`_  page.
+Users on **Windows** computers use either `Puttty <http://www.putty.org/>`_ or `MobaXterm <http://mobaxterm.mobatek.net/>`_ . If MobaXterm works on your computer, it is usually easier to use. When starting an ssh session in PuTTY, choose the connection type 'SSH', select port 22, and then type the hostname 'terra.tamu.edu'. For MobaXterm, select 'Session', 'SSH', and then remote host 'terra.tamu.edu'. Check the box to specify username and type your NetID. After selecting 'Ok', you will be prompted for Duo Two Factor Authentication. For more detailed instructions, visit the `Two Factor Authentication <https://hprc.tamu.edu/wiki/Two_Factor#MobaXterm/>`_  page.
 
-Users on **Mac** and **Linux/Unix** should use whatever SSH-capable terminal is available on their system. The command to connect to Grace is as follows. Be sure to replace [NetID] with your TAMU NetID.
+Users on **Mac** and **Linux/Unix** should use whatever SSH-capable terminal is available on their system. The command to connect to Terra is as follows. Be sure to replace [NetID] with your TAMU NetID.
 
 .. code-block:: php
 
@@ -106,7 +106,7 @@ The batch system will charge SUs from the either the account specified in the jo
 
 Finding Software
 ----------------
-Software on Grace is loaded using **modules**.
+Software on Terra is loaded using **modules**.
 
 A list of the most popular software on our systems is available on the `HPRC Available Software <https://hprc.tamu.edu/wiki/SW>`_   page.
 
@@ -149,7 +149,7 @@ Running Your Program / Preparing a Job File
 -------------------------------------------
 In order to properly run a program on Terra, you will need to create a job file and submit a job to the batch system. The batch system is a load distribution implementation that ensures convenient and fair use of a shared resource. Submitting jobs to a batch system allows a user to reserve specific resources with minimal interference to other users. All users are required to submit resource-intensive processing to the compute nodes through the batch system - **attempting to circumvent the batch system is not allowed.**
 
-On Grace, **Slurm** is the batch system that provides job management. More information on **Slurm** can be found in the `Terra Batch <https://hprc.tamu.edu/wiki/Terra:Batch>`_  page.
+On Tera, **Slurm** is the batch system that provides job management. More information on **Slurm** can be found in the `Terra Batch <https://hprc.tamu.edu/wiki/Terra:Batch>`_  page.
  
 The simple example job file below requests 1 core on 1 node with 2.5GB of RAM for 1.5 hours. Note that typical nodes on Terra have 28 cores with 120GB of usable memory and ensure that your job requirements will fit within these restrictions. Any modules that need to be loaded or executable commands will replace the *"#First Executable Line"* in this example.
 
