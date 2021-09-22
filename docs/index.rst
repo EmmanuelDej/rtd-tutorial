@@ -83,7 +83,7 @@
    
    grace
    terra
-   ood portal
+   ood
    galaxy
 
 
