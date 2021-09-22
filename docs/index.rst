@@ -73,8 +73,12 @@
 
 .. toctree::
    :maxdepth: 2
+   :caption: HPRC Useful Links
    
-   `HPRC Home Page <https://hprc.tamu.edu/>`_
+   HPRC Home Page
+   Wiki Home Page
+   New User Info
+   Contact Us
    
 .. toctree::
    :maxdepth: 2
