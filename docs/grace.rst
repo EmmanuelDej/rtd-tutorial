@@ -101,3 +101,79 @@ For files larger than several GB, you will want to consider the use of a more fa
   [NetID@grace1 ~]$ rsync -av [-z] localdir/ userid@remotesystem:/path/to/remotedir/
   
 An rsync example can be seen on the `Ada Fast Transfer <https://hprc.tamu.edu/wiki/Ada:Fast_Data_Transfer#Data_transfer_using_rsync>`_  page.
+
+Managing Project Accounts
+-------------------------
+The batch system will charge SUs from the either the account specified in the job parameters, or from your default account (if this parameter is omitted). To avoid errors in SU billing, you can view your active accounts, and set your default account using the `myproject <https://hprc.tamu.edu/wiki/HPRC:myproject>`_   command.
+
+Finding Software
+----------------
+Software on Grace is loaded using **hierarchical modules**.
+
+A list of the most popular software on our systems is available on the `HPRC Available Software <https://hprc.tamu.edu/wiki/SW>`_   page.
+
+To list all software installed as a module on Grace, use the mla utility:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ mla
+  
+To search for a specific piece of software installed as a module on Grace using the mla utility:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ mla keyword
+  
+To **search for** particular software by keyword, use:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ module spider keyword
+  
+To see how to load a module, use the full module name:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ module spider Perl/5.32.0
+  
+You will see a message like the following:
+
+.. code-block:: php
+
+  You will need to load all module(s) on any one of the lines below before the "Perl/5.32.0" module is available to load.
+
+      GCCcore/10.2.0
+  
+Load the base dependency module(s) first then the full module name
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ module load GCCcore/10.2.0  Perl/5.32.0
+  
+To list all currently loaded modules, use:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ module list
+  
+To see what other modules can be loaded with the base dependency module (for example when GCCcore/10.2.0 is loaded)
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ module avail
+  
+To remove all currently loaded modules, use:
+
+.. code-block:: php
+
+  [NetID@grace1 ~]$ module purge
+  
+If you need **new software** or **an update**, please contact us with your request.
+
+There are restrictions on what software we can install. There is also regularly a queue of requested software installations.
+
+.. tip::  
+  Please account for **delays **in your installation request timeline.
+
+
+ 
