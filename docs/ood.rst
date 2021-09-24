@@ -27,3 +27,22 @@ Services Provided
  * Rstudio
  * JupyterLab
  * JBrowse
+
+How to Access
+-------------
+We recommend you access the Grace or Terra portal through their landing page at
+
+.. code-block:: php
+      https://portal.hprc.tamu.edu
+      
+Click the portal you want to connect. The portals are CAS authenticated. All active HPRC users have access to both portals using their NetID and password. You will only be authenticated once, and before your session expires, you can freely access both portals without further authentication.
+
+If accessing from off-campus, the TAMU VPN is needed.
+
+You can go directly to the Grace or Terra portal using one of the following URLs:
+
+.. code-block:: php
+  https://portal-terra.hprc.tamu.edu
+  
+.. code-block:: php
+  https://portal-grace.hprc.tamu.edu
