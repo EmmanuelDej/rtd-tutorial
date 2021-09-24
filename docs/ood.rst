@@ -180,3 +180,74 @@ We have tried to provide the most commonly used GUI software packages on the Int
       vglrun app_name
   
 Otherwise, type the app_name from the command line directly.
+
+RStudio
+*******
+To install CRAN packages, start RStudio with enough memory for the install process: 10 cores and 2GB per core for example.
+
+RStudio automatically enables a web proxy so you only need to run the install.packages command or other commands for Github and Bioconductor package installations.
+
+If you are having problems with Bioconductor or github R packages installations, contact the HPRC helpdesk to request installation.
+
+JupyterLab
+**********
+
+Anaconda
+********
+
+Default conda environment
+*************************
+You can use the default conda environment in the JupyterLab portal app by selecting Anaconda/3-5.0.0.1 or Anaconda3/2020.07 and leaving the 'Optional Conda Environment to be activated' field blank.
+
+The default environment for Anaconda/3-5.0.0.1 is jupyterlab-v1.2.3_R-3.6.1 which has the R console installed.
+
+The default environment for Anaconda3/2020.07 is /sw/hprc/sw/Anaconda3/2020.07/envs/jupyterlab_v2.2.9_R-3.6.1 which has the R console installed.
+
+Custom Anaconda/3-5.0.0.1 conda environment
+*******************************************
+You can create your own JupyterLab conda environment using Anaconda for use on the HPRC portal but you must use one of the Anaconda versions that are on the JupyterLab `HPRC portal webpage <https://portal-terra.hprc.tamu.edu/pun/sys/dashboard/batch_connect/sys/jupyterlab/session_contexts/new>`_ .
+
+Notice that you will need to make sure you have enough available file quota (~30,000) since conda creates thousands of files.
+
+To to create an Anaconda conda environment called jupyterlab, do the following on the command line:
+
+.. code-block::
+      
+      module purge
+      module load Anaconda/3-5.0.0.1
+      conda create -n jupyterlab
+      
+After your jupyterlab environment is created, you will see output on how to activate and use your jupyterlab environment
+
+.. code-block:: php
+      
+      #
+      # To activate this environment, use:
+      # > source activate jupyterlab
+      #
+      # To deactivate an active environment, use:
+      # > source deactivate
+      #
+      
+Then you can install jupyterlab (specifying a version if needed) and add packages to your jupyterlab environment
+
+.. code-block:: php
+      
+      source activate jupyterlab
+      conda install -c conda-forge jupyterlab
+      conda install -c conda-forge package-name
+      
+You can specify a specific package version with the install command. For example to install pandas version 1.1.3:
+
+.. code-block:: php
+      
+      conda install -c conda-forge pandas=1.1.3
+  
+To remove downloads after packages are installed.
+
+.. code-block:: php
+
+      conda clean -t
+
+When using Anaconda/3-5.0.0.1, use just the environment name in the 'Optional Environment to be activated' field which in this example will be **jupyterlab**
+
