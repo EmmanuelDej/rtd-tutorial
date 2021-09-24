@@ -99,7 +99,7 @@ Copy/Paste can be done with hot keys. To copy text from the shell access termina
 Shell access works with Firefox and Chrome only.
 
 Copy/Paste in VNC
-*****************
+/////////////////
 If launching an interactive session in the portal, there are a few extra steps that need to be taken. Please reference the media below, or the summary of steps below that for more information. 
 
 .. image:: images/PortalDemo.gif
@@ -107,3 +107,56 @@ If launching an interactive session in the portal, there are a few extra steps t
 #. Open the toolbar on the left of the screen and select "Clipboard".
 #. If you want to paste text from your host computer to the remote session, paste the text in the clipboard box. You can then use the middle-mouse button (MMB) to paste it in your terminal.
 #. If you want to copy text from the remote session to your host computer's clipboard, simply highlight the text in the terminal. It will appear in the Clipboard toolbar pop-out where you can copy it to your host clipboard.
+
+Jobs
+****
+From the jobs drop down menu, a user can view their active jobs or compose and submit jobs using the job composer.
+
+Active Jobs
+///////////
+The active jobs menu provides information about running jobs the cluster, including their JobID, name, user, account, time used, queue, and status. Clicking the arrow to the left of a given job will reveal more details, such as where it was submitted from, which node it's running on, when it was submitted, process IDs, memory, and CPU time.
+
+.. image:: images/1200px-Activejobs.png
+
+Job Composer
+////////////
+When first launched, the job composer will walk the user through each of its features, covering the whole process of creating, editing, and submitting a job.
+
+The job composer provides some template job scripts the user can choose from. Once a template is selected, you need to edit the template to provide customized job content. This can be done by clicking 'Open Editor' underneath the job script contents.
+
+The job composer has a specific directory in the user's scratch to store the jobs it has created. We call the directory the job composer's root directory. New jobs created by the job composer will have a sub-directory in the root directory. The name of the sub-directory is same as the index of the job, which is an integer maintained by the job composer. The first job has an index 1, the second job has an index 2, and so on. Knowing this is very important to help us using the job composer more effectively.
+
+There are two ways to cope with the default directory created by the job composer.
+
+.. imnage:: images/jobcomposer.png
+
+**Method 1:** using the default directory as the working directory of your job. This means you need to upload all input files to that directory before you can click the submit button. This can be easily done by clicking 'Open Dir' right beneath the job script contents. A file explorer will open the job directory in a new tab where you can do file transfers.
+
+**Method 2:** if you already have the input files stored somewhere in the cluster and don't want to move them around, or you prefer to have an organized directories by yourself, you can simply add one command line in the job script before any other command line, where /path/to/job_working_dir is the directory you want all the commands to be executed:
+
+.. code-block:: php
+      cd /path/to/job_working_dir
+   
+Common Problems
+***************
+#. The session starts and quits immediately.
+
+Check your quota in your home and scratch. If you see a full or close to full usage, clean your disk space and try again.
+
+#. In ANSYS Workbench, not all windows are available in the foreground.
+
+Right click the bottom panel title bar "Unsaved Project - Workbench" and select maximize
+
+Log out
+*******
+To properly log out the portal, you must do two things: (1) log out the portal by clicking 'Log out' from the top navigation bar; (2) close the browser to completely terminate the session.
+
+**Be aware that only logout of the portal is not enough. You must also close the entire browser (not just the tab)**, a side effect of CAS. This is very important if you are using a public computer.
+
+Cleanup
+*******
+The portal stores temporary files for interactive apps in $SCRATCH/ondemand/data/sys/dashboard/. Although the disk space used by those files accumulate slowly, it is a good habit to clean this directory periodically.
+
+.. code-block:: php
+      rm -rf $SCRATCH/ondemand/data/sys/dashboard/batch_connect/sys/*
+      
