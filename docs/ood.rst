@@ -377,6 +377,8 @@ Notice that you will need to make sure you have enough available file quota (~10
 
 This table can help you decide when to use a Python module and when to use an Anaconda module for installing python packages.
 
-+-----|-------------------------------|---------------------------------+
-|     | Python                        |        Anaconda                 |
-+-----|-------------------------------|---------------------------------+
+   +------------+-----------------------------------------------------------+---------------------------------------------------------+ 
+   |            |  Grace / Slurm Batch Pages                                | Terra / Slurm Batch Pages                               |
+   +============+===========================================================+=========================================================+ 
+   |            |  `Complete Grace Batch Page <https://u.tamu.edu/GBatch>`_ |`Complete Terra Batch Page <https://u.tamu.edu/TBatch>`_ | 
+   +------------+-----------------------------------------------------------+---------------------------------------------------------+
