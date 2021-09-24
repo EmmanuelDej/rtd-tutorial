@@ -174,3 +174,9 @@ We have tried to provide the most commonly used GUI software packages on the Int
 #. Click 'VNC' from 'Interactive Apps' and start a vnc session. 
 #. In the terminal within the new tab, load the module for the software you want to run. 
 #. If you have chosen a GPU node, please run
+
+.. code-block:: php
+      
+      vglrun app_name
+  
+Otherwise, type the app_name from the command line directly.
