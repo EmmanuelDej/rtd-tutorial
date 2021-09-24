@@ -377,11 +377,4 @@ Notice that you will need to make sure you have enough available file quota (~10
 
 This table can help you decide when to use a Python module and when to use an Anaconda module for installing python packages.
 
-   +-----------------------+-----------------------------------------------------------+---------------------------------------------------------+ 
-   |                       | Python                                                    | Anaconda                                                |
-   +=======================+===========================================================+=========================================================+ 
-   | Example Module        | module load Python/3.6.6-intel-2018b                      | module load Anaconda/3-5.0.0.1                          | 
-   +-----------------------+-----------------------------------------------------------+---------------------------------------------------------+
-   | When to use           | When only python packages are required                    | When C, C++ or R modules are required for installing a  |
-   |                       |                                                           | software package with an extensive dependency list.     |
-   +-----------------------+-----------------------------------------------------------+---------------------------------------------------------+
+.. image:: images/PythonAnacondaTable.png
