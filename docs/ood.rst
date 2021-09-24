@@ -251,3 +251,127 @@ To remove downloads after packages are installed.
 
 When using Anaconda/3-5.0.0.1, use just the environment name in the 'Optional Environment to be activated' field which in this example will be **jupyterlab**
 
+Custom Anaconda3/2020.07 conda environment
+******************************************
+You can create your own JupyterLab conda environment using Anaconda for use on the HPRC portal but you must use one of the Anaconda versions that are on the JupyterLab `HPRC portal webpage <https://portal-terra.hprc.tamu.edu/pun/sys/dashboard/batch_connect/sys/jupyterlab/session_contexts/new>`_ .
+
+Notice that you will need to make sure you have enough available file quota (~30,000) since conda creates thousands of files.
+
+When using Anaconda3/2020.07, you will need to move your ~/.conda directory to $SCRATCH and make a symbolic link since Anaconda3 may fill up your $HOME disk quota:
+
+.. code-block:: php
+
+      cd
+      mv .conda $SCRATCH
+      ln -s $SCRATCH/.conda
+      
+To to create an Anaconda conda environment called jupyterlab, do the following on the command line:
+
+.. code-block:: php
+      
+      module purge
+      mkdir -p /scratch/user/your_netid/Anaconda3/2020.07/envs
+      module load Anaconda3/2020.07
+      conda create --prefix /scratch/user/your_netid/Anaconda3/2020.07/envs/jupyterlab
+      
+After your jupyterlab environment is created, you will see output on how to activate and use your jupyterlab environment. You can use 'source activate' instead of 'conda activate'
+
+.. code-block:: php
+
+      #
+      # To activate this environment, use:
+      # > conda activate /scratch/user/your_netid/Anaconda3/2020.07/envs/jupyterlab
+      #
+      # To deactivate an active environment, use:
+      # > conda deactivate
+      #
+
+Then you can install jupyterlab (specifying a version if needed) and add packages to your jupyterlab environment
+
+.. code-block:: php
+
+      source activate /scratch/user/your_netid/Anaconda3/2020.07/envs/jupyterlab
+      conda install -c conda-forge jupyterlab
+      conda install -c conda-forge package-name
+      
+You can specify a specific package version with the install command. For example to install pandas version 1.1.3:
+
+.. code-block:: php
+      conda install -c conda-forge pandas=1.1.3
+
+To remove downloads after packages are installed.
+
+.. code-block:: php
+      
+      conda clean -t
+
+When using Anaconda3/2020.07, you must use the full path to the environment in the 'Optional Environment to be activated' field. In this example it will be **/scratch/user/your_netid/Anaconda3/2020.07/envs/jupyterlab**
+
+**NOTE: When using Anaconda3/2020.07 to create a virtualenv, the installation will add lines to your ~/.bashrc file that you should delete since these lines which automatically load your virtualenv which will interfere with other jobs and modules.**
+
+Python
+******
+
+Default python virtualenv
+*************************
+
+You can use the default virtualenv in the JupyterLab portal app by selecting Python/3.7.4-GCCcore-8.3.0 and leaving the 'Optional Conda Environment to be activated' field blank.
+
+The default virtualenv has `Jupyterlmod <https://github.com/cmd-ntrf/jupyter-lmod>`_  installed which allows you to load compatible software modules to use in your notebook.
+
+Type 'toolchains' on the Terra command line to see a table of compatible toolchains.
+
+To load additional software modules, click the 'Softwares' icon in the left most part of your JupyterLab notebook. Search for modules with a compatible toolchain (such as TensorFlow/2.2.0-foss-2019b-Python-3.7.4) and click 'Load' once and wait for the LOADED MODULES section to refresh.
+
+If you have already started your notebook before loading modules, you will need to restart the kernel in order for the loaded module to be available by clicking Kernel -> Restart Kernel... in the top JupyterLab menu or click the 'Restart the kernel' icon at the top of the notebook.
+
+If you get 'Server Connection Error' messages after restarting the kernel, stop all other notebooks you have running by clicking the 'Running Terminals and Kernels' button in the left panel menu and then 'SHUT DOWN' all other running KERNEL SESSIONS.
+
+Custom python virtualenv
+************************
+
+You can create your own virtualenv to use with the JupyterLab portal app but in most cases the default virtualenv should work for you.
+
+You must create your virtualenv using one of the Python modules listed on the JupyterLab HPRC portal webpage.
+
+Here is an example of creating your own virtualenv on a login node.
+
+.. code-block:: php
+      
+      module load Python/3.7.4-GCCcore-8.3.0
+      mkdir -p /scratch/user/your_netid/pip_envs/Python/3.7.4-GCCcore-8.3.0
+      cd /scratch/user/your_netid/pip_envs/Python/3.7.4-GCCcore-8.3.0
+      virtualenv jupyterlab
+      source /scratch/user/your_netid/pip_envs/Python/3.7.4-GCCcore-8.3.0/jupyterlab/bin/activate
+      pip install juypter
+      pip install jupyterlab
+      pip install additional_packages
+      
+Then in the JupyterLab portal app, select the Python/3.7.4-GCCcore-8.3.0 Module and enter the **full path** of the activate command found in your virtualenv into the 'Optional Conda Environment to be activated' field.
+
+Example of what to enter in the 'Optional Conda Environment to be activated' field:
+
+.. code-block:: php
+      /scratch/user/your_netid/pip_envs/Python/3.7.4-GCCcore-8.3.0/jupyterlab/bin/activate
+
+Web Access
+**********
+Although compute nodes do not have access to the internet, the JupyterLab app uses a proxy server by default which allows your JupyterLab session to have access to the internet.
+
+Jupyter Notebook
+****************
+HPRC supports three kinds of environment for Jupyter Notebooks: Conda, Module + Python virtualenv, and Singularity.
+
+All three of these allow some customization by the user, to varying degrees. Broadly speaking:
+
+* Conda: software built by external repository. Provides quick access to commonly-used python packages. Can be extended by the user. Version choices are limited. Recommended for novice users.
+* Module + Python virtualenv: software built and maintained by HPRC, optimized for use on our cluster. Can be extended by the user. New software can be requested. Recommended for experienced users.
+* Singularity: software built by anyone, anywhere. Fully customizable by the user. Recommended for research groups who collaborate on software builds across multiple clusters.
+
+HPRC provides Jupyter Notebook installations for use with our Conda and Python modules. You can also create your own Jupyter Notebook environment using either a Python environment or Anaconda environment for use on the HPRC Portal, but you must use one of the Module versions that are available on the Jupyter Notebook HPRC portal web page.
+
+Your custom Notebook environment must be created on the command line for later use on the Jupyter Notebook portal app.
+
+Notice that you will need to make sure you have enough available file quota (~10,000) since conda and pip creates thousands of files.
+
+This table can help you decide when to use a Python module and when to use an Anaconda module for installing python packages.
