@@ -163,3 +163,14 @@ The portal stores temporary files for interactive apps in $SCRATCH/ondemand/data
       rm -rf $SCRATCH/ondemand/data/sys/dashboard/batch_connect/sys/*
       
 
+Interactive Apps
+----------------
+Each piece of software listed above in the "services provided" section is directly available to launch from this menu. When a piece of software is selected, you will see the interface for job parameters such as number of cores, wall time, memory, and type of node. If you are not sure what to change, the default values work fine. Once you fill out the form, click 'Launch' and the app will be launched as a job. It will first go into a queue, and when ready, a button will become available to view the interface of the chosen software.
+
+Interactive sessions can be managed via the "My Interactive Sessions" button on the navigation bar.
+
+We have tried to provide the most commonly used GUI software packages on the Interactive Apps drop-down menu. If a software is not available, you can always run it within VNC, which is provided on the drop-down menu. To run a GUI application in the VNC session on the portal, follow these steps.
+
+#. Click 'VNC' from 'Interactive Apps' and start a vnc session. 
+#. In the terminal within the new tab, load the module for the software you want to run. 
+#. If you have chosen a GPU node, please run
