@@ -352,6 +352,7 @@ Then in the JupyterLab portal app, select the Python/3.7.4-GCCcore-8.3.0 Module 
 Example of what to enter in the 'Optional Conda Environment to be activated' field:
 
 .. code-block:: php
+
       /scratch/user/your_netid/pip_envs/Python/3.7.4-GCCcore-8.3.0/jupyterlab/bin/activate
 
 Web Access
