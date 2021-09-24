@@ -196,7 +196,7 @@ Anaconda
 ********
 
 Default conda environment
-*************************
+/////////////////////////
 You can use the default conda environment in the JupyterLab portal app by selecting Anaconda/3-5.0.0.1 or Anaconda3/2020.07 and leaving the 'Optional Conda Environment to be activated' field blank.
 
 The default environment for Anaconda/3-5.0.0.1 is jupyterlab-v1.2.3_R-3.6.1 which has the R console installed.
@@ -204,7 +204,7 @@ The default environment for Anaconda/3-5.0.0.1 is jupyterlab-v1.2.3_R-3.6.1 whic
 The default environment for Anaconda3/2020.07 is /sw/hprc/sw/Anaconda3/2020.07/envs/jupyterlab_v2.2.9_R-3.6.1 which has the R console installed.
 
 Custom Anaconda/3-5.0.0.1 conda environment
-*******************************************
+///////////////////////////////////////////
 You can create your own JupyterLab conda environment using Anaconda for use on the HPRC portal but you must use one of the Anaconda versions that are on the JupyterLab `HPRC portal webpage <https://portal-terra.hprc.tamu.edu/pun/sys/dashboard/batch_connect/sys/jupyterlab/session_contexts/new>`_ .
 
 Notice that you will need to make sure you have enough available file quota (~30,000) since conda creates thousands of files.
@@ -252,7 +252,7 @@ To remove downloads after packages are installed.
 When using Anaconda/3-5.0.0.1, use just the environment name in the 'Optional Environment to be activated' field which in this example will be **jupyterlab**
 
 Custom Anaconda3/2020.07 conda environment
-******************************************
+//////////////////////////////////////////
 You can create your own JupyterLab conda environment using Anaconda for use on the HPRC portal but you must use one of the Anaconda versions that are on the JupyterLab `HPRC portal webpage <https://portal-terra.hprc.tamu.edu/pun/sys/dashboard/batch_connect/sys/jupyterlab/session_contexts/new>`_ .
 
 Notice that you will need to make sure you have enough available file quota (~30,000) since conda creates thousands of files.
@@ -313,7 +313,7 @@ Python
 ******
 
 Default python virtualenv
-*************************
+/////////////////////////
 
 You can use the default virtualenv in the JupyterLab portal app by selecting Python/3.7.4-GCCcore-8.3.0 and leaving the 'Optional Conda Environment to be activated' field blank.
 
@@ -328,7 +328,7 @@ If you have already started your notebook before loading modules, you will need 
 If you get 'Server Connection Error' messages after restarting the kernel, stop all other notebooks you have running by clicking the 'Running Terminals and Kernels' button in the left panel menu and then 'SHUT DOWN' all other running KERNEL SESSIONS.
 
 Custom python virtualenv
-************************
+////////////////////////
 
 You can create your own virtualenv to use with the JupyterLab portal app but in most cases the default virtualenv should work for you.
 
