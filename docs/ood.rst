@@ -60,3 +60,7 @@ If you are not already enrolled in Duo and plan to use VPN, you can enroll now a
 #. Remember: Once you sign up, you will need your Duo-enrolled device when you log in to most Texas A&M resources.
 
 For more information, consult IT's knowledge base article for Duo: https://u.tamu.edu/KB0012105
+
+Using the Portal
+----------------
+Each service provided by the portal is available at the navigation bar at the top of the page.
