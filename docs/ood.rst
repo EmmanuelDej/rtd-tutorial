@@ -85,3 +85,25 @@ Normal file management commands are available with the click of a button. These 
 * Deleting files
 * File upload/download
 The 'View' button will display the highlighted file in the browser, as long as the file type is supported by the browser. Luckily modern browsers support many different types of files, from simple text files, to image files, to complicated multimedia files. This feature can be very convenient and useful if you want to quickly review a file, since you don't have to download the file to your local machine first and then review it, as what you would be doing if you had connected to a cluster using putty or mobaxterm.
+
+File Editor
+***********
+File editor allows you to edit a file selected. It cannot be accessed from the main menu, but is available through the File app or Job Composer. In File app, you first select a file, then click 'Edit' from the File app interface. Then a new tab will be opened and you can edit the file in the editor. In Job Composer, you can edit the job script by clicking 'Open Editor' at the bottom of Job Composer.
+
+Cluster Shell Access
+********************
+Shell access to any of the three clusters is available from this drop down menu with one click. Shell access app is similar to ssh client such as Putty and MobaXterm. it allows users to login to a cluster with their NetID and password.
+
+Copy/Paste can be done with hot keys. To copy text from the shell access terminal, highlight the text with a mouse, then the highlighted text will be coped into the clipboard. To paste a text from the clipboard to the terminal, type 'Ctrl+v'.
+
+Shell access works with Firefox and Chrome only.
+
+Copy/Paste in VNC
+*****************
+If launching an interactive session in the portal, there are a few extra steps that need to be taken. Please reference the media below, or the summary of steps below that for more information. 
+
+.. image:: images/PortalDemo.gif
+
+#. Open the toolbar on the left of the screen and select "Clipboard".
+#. If you want to paste text from your host computer to the remote session, paste the text in the clipboard box. You can then use the middle-mouse button (MMB) to paste it in your terminal.
+#. If you want to copy text from the remote session to your host computer's clipboard, simply highlight the text in the terminal. It will appear in the Clipboard toolbar pop-out where you can copy it to your host clipboard.
