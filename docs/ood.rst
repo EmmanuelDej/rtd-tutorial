@@ -64,3 +64,5 @@ For more information, consult IT's knowledge base article for Duo: https://u.tam
 Using the Portal
 ----------------
 Each service provided by the portal is available at the navigation bar at the top of the page.
+
+.. image:: images/Navigation-bar.png
