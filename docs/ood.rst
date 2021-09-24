@@ -376,3 +376,7 @@ Your custom Notebook environment must be created on the command line for later u
 Notice that you will need to make sure you have enough available file quota (~10,000) since conda and pip creates thousands of files.
 
 This table can help you decide when to use a Python module and when to use an Anaconda module for installing python packages.
+
++-----|-------------------------------|---------------------------------+
+|     | Python                        |        Anaconda                 |
++-----|-------------------------------|---------------------------------+
