@@ -128,7 +128,7 @@ The job composer has a specific directory in the user's scratch to store the job
 
 There are two ways to cope with the default directory created by the job composer.
 
-.. imnage:: images/Jobcomposer.png
+.. image:: images/Jobcomposer.png
 
 **Method 1:** using the default directory as the working directory of your job. This means you need to upload all input files to that directory before you can click the submit button. This can be easily done by clicking 'Open Dir' right beneath the job script contents. A file explorer will open the job directory in a new tab where you can do file transfers.
 
