@@ -73,6 +73,7 @@ The first option in the navigation bar is the "Files" drop down menu. From this 
 
 Some users may find the visual interface of the file explorer more intuitive than shell based file exploring. All files in the directory are shown on screen, along with the file tree or hierarchy.
 
+.. image:: images/1200px-File-explorer.png
 Normal file management commands are available with the click of a button. These include:
 
 * Viewing files
