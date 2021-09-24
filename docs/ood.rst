@@ -378,3 +378,5 @@ Notice that you will need to make sure you have enough available file quota (~10
 This table can help you decide when to use a Python module and when to use an Anaconda module for installing python packages.
 
 .. image:: images/PythonAnacondaTable.png
+
+`understanding-conda-and-pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`_ 
