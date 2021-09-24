@@ -66,3 +66,21 @@ Using the Portal
 Each service provided by the portal is available at the navigation bar at the top of the page.
 
 .. image:: images/Navigation-bar.png
+
+Files
+*****
+The first option in the navigation bar is the "Files" drop down menu. From this menu, a user can view a file explorer at either their home directory or scratch directory.
+
+Some users may find the visual interface of the file explorer more intuitive than shell based file exploring. All files in the directory are shown on screen, along with the file tree or hierarchy.
+
+Normal file management commands are available with the click of a button. These include:
+
+* Viewing files
+* Text editing
+* Copy/Paste
+* Renaming files
+* Creating files
+* Creating directories
+* Deleting files
+* File upload/download
+The 'View' button will display the highlighted file in the browser, as long as the file type is supported by the browser. Luckily modern browsers support many different types of files, from simple text files, to image files, to complicated multimedia files. This feature can be very convenient and useful if you want to quickly review a file, since you don't have to download the file to your local machine first and then review it, as what you would be doing if you had connected to a cluster using putty or mobaxterm.
