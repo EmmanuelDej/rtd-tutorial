@@ -128,24 +128,25 @@ The job composer has a specific directory in the user's scratch to store the job
 
 There are two ways to cope with the default directory created by the job composer.
 
-.. imnage:: images/jobcomposer.png
+.. imnage:: images/Jobcomposer.png
 
 **Method 1:** using the default directory as the working directory of your job. This means you need to upload all input files to that directory before you can click the submit button. This can be easily done by clicking 'Open Dir' right beneath the job script contents. A file explorer will open the job directory in a new tab where you can do file transfers.
 
 **Method 2:** if you already have the input files stored somewhere in the cluster and don't want to move them around, or you prefer to have an organized directories by yourself, you can simply add one command line in the job script before any other command line, where /path/to/job_working_dir is the directory you want all the commands to be executed:
 
 .. code-block:: php
+
       cd /path/to/job_working_dir
    
 Common Problems
 ***************
 #. The session starts and quits immediately.
 
-Check your quota in your home and scratch. If you see a full or close to full usage, clean your disk space and try again.
+      Check your quota in your home and scratch. If you see a full or close to full usage, clean your disk space and try again.
 
 #. In ANSYS Workbench, not all windows are available in the foreground.
 
-Right click the bottom panel title bar "Unsaved Project - Workbench" and select maximize
+      Right click the bottom panel title bar "Unsaved Project - Workbench" and select maximize
 
 Log out
 *******
@@ -158,5 +159,7 @@ Cleanup
 The portal stores temporary files for interactive apps in $SCRATCH/ondemand/data/sys/dashboard/. Although the disk space used by those files accumulate slowly, it is a good habit to clean this directory periodically.
 
 .. code-block:: php
+
       rm -rf $SCRATCH/ondemand/data/sys/dashboard/batch_connect/sys/*
       
+
