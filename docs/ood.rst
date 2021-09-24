@@ -45,7 +45,7 @@ You can go directly to the Grace or Terra portal using one of the following URLs
   https://portal-grace.hprc.tamu.edu
 
 Two-Factor Authentication Requirement
--------------------------------------
+*************************************
 Starting October 1, 2018, the Division of Information Technology will require use of Duo NetID Two Factor Authentication on its Virtual Private Network (VPN) (connect.tamu.edu) service.
 
 Duo provides a second layer of security to Texas A&M accounts.
