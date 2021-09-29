@@ -1,3 +1,5 @@
+.. _test::
+
 .. raw:: mediawiki
    {{WelcomeBanner}}
 {{ TextBox \| content =
