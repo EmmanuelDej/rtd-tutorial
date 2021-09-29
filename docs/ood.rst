@@ -380,3 +380,8 @@ This table can help you decide when to use a Python module and when to use an An
 .. image:: images/PythonAnacondaTable.png
 
 `understanding-conda-and-pip <https://www.anaconda.com/blog/understanding-conda-and-pip>`_ 
+
+.. note::
+      
+      you must activate the python virtualenv or anaconda environment before installing packages with 'pip install --user' or 'conda install'
+   
