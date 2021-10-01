@@ -62,13 +62,6 @@ easily.
 .. raw:: html
 
    </div>
-
-.. raw:: html
-
-   <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; padding-bottom: 1rem;">
-
-   
-   Creating your own batch jobs: the `tamubatch Page <https://hprc.tamu.edu/wiki/SW:tamubatch>`_ provides information on how to use tamubatch to create and submit jobs easily.
    
   * **Troubleshooting:** While we cannot predict all bugs and errors, some issues on our clusters are common enough to catalog. See the `Common Problems and Quick Solutions Page <https://hprc.tamu.edu/wiki/HPRC:CommonProblems>`_ for a small collection of the most prevalent issues. For further assistance, users can contact **help@hprc.tamu.edu** to open a support ticket.
   
