@@ -83,7 +83,7 @@
    <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; border: 1px solid black; padding-bottom: 1rem;">
 
 | **Grace / SLURM Batch Pages**
-| `Complete Grace Batch Page <:Grace:Batch>`__
+| `Complete Grace Batch Page <https://u.tamu.edu/GBatch>`__
 | `Job Submission (sbatch) <:Grace:Batch#Job_Submission>`__
 | `Grace Queue Structure <:Grace:Batch#Batch_Queues>`__
 
