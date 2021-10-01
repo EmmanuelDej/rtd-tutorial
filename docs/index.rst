@@ -43,8 +43,30 @@
 | `Job Submission (sbatch) <https://u.tamu.edu/TSBatch>`__
 | `Terra Queue Structure <https://u.tamu.edu/TBQueue>`__
 
-   
- 
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; padding-left: 1.5rem; padding-top: 1rem; border:">
+
+Creating your own batch jobs: the `tamubatch Page <https://hprc.tamu.edu/wiki/SW:tamubatch>`__
+provides information on how to use tamubatch to create and submit jobs
+easily.
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; padding-bottom: 1rem;">
+
    
    Creating your own batch jobs: the `tamubatch Page <https://hprc.tamu.edu/wiki/SW:tamubatch>`_ provides information on how to use tamubatch to create and submit jobs easily.
    
