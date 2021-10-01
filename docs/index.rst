@@ -20,15 +20,31 @@
    * **QuickStart Guides:** For just the "need-to-know" information on getting started with our clusters, visit our QuickStart pages. Topics discussed include cluster access, file management, the batch system, setting up a software environment using modules, creating your own job files, and project account management. `Grace Quickstart Guide <https://hprc.tamu.edu/wiki/Grace:QuickStart>`_ , `Terra Quickstart Guide <https://hprc.tamu.edu/wiki/Terra:QuickStart>`_ .
 
    * **Batch Jobs:** As a shared resource between many users, each cluster must employ a batch system to schedule a time for each user's job to run. Without such a system, one user could use a disproportionate amount of resources, and cause other users' work to stall. Ada's batch system is called LSF, and Terra's batch system is called SLURM. While similar in function, they differ in their finer details, such as job file syntax. Information relevant to each system can be found below.
-   +----------------------------------------------------------+---------------------------------------------------------+ 
-   | Grace / Slurm Batch Pages                                | Terra / Slurm Batch Pages                               |
-   +==========================================================+=========================================================+ 
-   | `Complete Grace Batch Page <https://u.tamu.edu/GBatch>`_ |`Complete Terra Batch Page <https://u.tamu.edu/TBatch>`_ | 
-   +----------------------------------------------------------+---------------------------------------------------------+
-   | `Job Submission (sbatch) <https://u.tamu.edu/GSBatch>`_  |`Job Submission (sbatch) <https://u.tamu.edu/TSBatch>`_  |               
-   +----------------------------------------------------------+---------------------------------------------------------+ 
-   | `Grace Queue Structure <https://u.tamu.edu/GBQueue>`_    | `Terra Queue Structure <https://u.tamu.edu/TBQueue>`_   | 
-   +----------------------------------------------------------+---------------------------------------------------------+
+   
+.. raw:: html
+
+   <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; border: 1px solid black; padding-bottom: 1rem;">
+
+| **Grace / SLURM Batch Pages**
+| `Complete Grace Batch Page <https://u.tamu.edu/GBatch>`__
+| `Job Submission (sbatch) <https://u.tamu.edu/GSBatch>`__
+| `Grace Queue Structure <https://u.tamu.edu/GBQueue>`__
+
+.. raw:: html
+
+   </div>
+
+.. raw:: html
+
+   <div style="column-count:1;-moz-column-count:1;-webkit-column-count:1; font-size:100%; align:center; margin: auto; border: 1px solid black; padding-bottom: 1rem;">
+
+| **Terra / SLURM Batch Pages**
+| `Complete Terra Batch Page <https://u.tamu.edu/TBatch>`__
+| `Job Submission (sbatch) <https://u.tamu.edu/TSBatch>`__
+| `Terra Queue Structure <https://u.tamu.edu/TBQueue>`__
+
+   
+ 
    
    Creating your own batch jobs: the `tamubatch Page <https://hprc.tamu.edu/wiki/SW:tamubatch>`_ provides information on how to use tamubatch to create and submit jobs easily.
    
