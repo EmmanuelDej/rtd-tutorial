@@ -384,4 +384,12 @@ This table can help you decide when to use a Python module and when to use an An
 .. note::
       
       you must activate the python virtualenv or anaconda environment before installing packages with 'pip install --user' or 'conda install'
-   
+
+Python
+//////
+
+A Python module can be used to create a virtual environment to be used in the portal Jupyter Notebook app when all you need is Python packages.
+
+You can use a default Python virtual environment in the Jupyter Notebook portal app by leaving the "Optional Environment to be activated" field blank.
+
+To to create a Python virtual environment called my_notebook-python-3.6.6-intel-2018b (you can name it whatever you like), do the following on the command line. You can save your virtual environments in any $SCRATCH directory you want. In this example a directory called /scratch/user/mynetid/pip_envs is used but you can use another name instead of pip_envs
