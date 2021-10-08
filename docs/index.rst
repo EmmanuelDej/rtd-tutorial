@@ -65,13 +65,13 @@ easily.
 
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 3
    :caption: HPRC
    
    hprc
    
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 3
    :caption: User Guides
    
    grace
