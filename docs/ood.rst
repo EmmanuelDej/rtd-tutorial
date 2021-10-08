@@ -394,8 +394,33 @@ You can use a default Python virtual environment in the Jupyter Notebook portal 
 
 To to create a Python virtual environment called my_notebook-python-3.6.6-intel-2018b (you can name it whatever you like), do the following on the command line. You can save your virtual environments in any $SCRATCH directory you want. In this example a directory called /scratch/user/mynetid/pip_envs is used but you can use another name instead of pip_envs
 
-Default python virtualenv
+.. code-block:: php
+
+      mkdir /scratch/user/mynetid/pip_envs
+      
+A good practice is to name your environment so that you can identify which Python version is in your virtualenv so that you know which module to load.
+
+The next three lines will create your virtual environment. You can use any one of the modules listed on the Jupyter notebook portal app. Python/3.6.6-intel-2018b is used in this example
+
+.. code-block:: php
+
+      module purge
+      module load Python/3.6.6-intel-2018b
+      virtualenv --system-site-packages /scratch/user/mynetid/pip_envs/my_notebook-python-3.6.6-intel-2018b
+      
+We recommend enabling --system-site-packages so that any modules you load will continue to function.
+
+Then you can activate the virtual environment by using the full path to the activate command inside your virtual environment and install Python packages.
+
+.. code-block:: php
+
+      source /scratch/user/mynetid/pip_envs/my_notebook-python-3.6.6-intel-2018b/bin/activate
+      pip install notebook
+      pip install optional-python-package-name
+      
+You can use your Python/3.6.6-intel-2018b environment in the Jupyter Notebook portal app by selecting the Python/3.6.6-intel-2018b module in the portal app page and providing the name including full path to the activate command for your Python/3.6.6-intel-2018b virtual environment in the "Optional Environment to be activated" box (i.e. /scratch/user/mynetid/pip_envs/my_notebook-python-3.6.6-intel-2018b/bin/activate). The activate command is found inside the bin directory of your virtual env. An example of what to put in the "Optional Environment to be activated" box is the full path used in the source command above.
+
+Loading additional Lmod modules
 +++++++++++++++++++++++++
 
-You can create your own virtualenv to use with the JupyterLab portal app but in most cases the default virtualenv should work for you.
-
+The default Python/3.7.4-GCCcore-8.3.0 virtualenv for JupyterLab on Terra has Jupyterlmod installed which allows the user to load any module built with the GCCcore-8.3.0 or 2019b toolchains after starting jupyter notebook in JupyterLab.
