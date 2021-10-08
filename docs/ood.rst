@@ -393,3 +393,10 @@ A Python module can be used to create a virtual environment to be used in the po
 You can use a default Python virtual environment in the Jupyter Notebook portal app by leaving the "Optional Environment to be activated" field blank.
 
 To to create a Python virtual environment called my_notebook-python-3.6.6-intel-2018b (you can name it whatever you like), do the following on the command line. You can save your virtual environments in any $SCRATCH directory you want. In this example a directory called /scratch/user/mynetid/pip_envs is used but you can use another name instead of pip_envs
+
+
+Default python virtualenv
+.........................
+
+You can create your own virtualenv to use with the JupyterLab portal app but in most cases the default virtualenv should work for you.
+
