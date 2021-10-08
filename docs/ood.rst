@@ -455,5 +455,42 @@ The recommended Anaconda module to use for Python 3 is Anaconda/3-5.0.0.1
 
 To to create an Anaconda conda environment called my_notebook (you can name it whatever you like), do the following on the command line:
 
+.. code-block:: php
 
+      module purge
+      module load Anaconda/3-5.0.0.1
+      conda create -n my_notebook
+
+After your my_notebook environment is created, you will see output on how to activate and use your my_notebook environment
+
+.. code-block:: php
       
+      #
+      # To activate this environment, use:
+      # > source activate my_notebook
+      #
+      # To deactivate an active environment, use:
+      # > source deactivate
+      #
+      
+Then you need to install notebook and then you can add optional packages to your my_notebook environment
+
+.. code-block:: php
+
+      source activate my_notebook
+      conda install -c conda-forge notebook
+      conda install -c conda-forge optional-package-name
+      
+You can use your Anaconda/3-5.0.0.1 environment in the Jupyter Notebook portal app by selecting the Anaconda/3-5.0.0.1 module in the portal app page and providing just the name (without the full path) of your Anaconda/3-5.0.0.1 environment in the "Optional Environment to be activated" box. In the example above, the value to enter is: **my_notebook**
+
+Errors importing a python package
++++++++++++++++++++++++++++++++++
+
+Sometimes the latest or specific versions of a python package does not work in a specific Anaconda environment due to incompatibility with the Python version or with other packages.
+
+Default Python version
+++++++++++++++++++++++
+
+You can try installing an older version of a python package by searching available versions on anaconda.org and specify a specific version to install.
+
+For example, if you have Python 3.6.11 and numpy 1.19.2 and see the following error:
