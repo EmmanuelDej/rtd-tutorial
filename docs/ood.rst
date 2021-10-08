@@ -424,3 +424,36 @@ Loading additional Lmod modules
 +++++++++++++++++++++++++
 
 The default Python/3.7.4-GCCcore-8.3.0 virtualenv for JupyterLab on Terra has Jupyterlmod installed which allows the user to load any module built with the GCCcore-8.3.0 or 2019b toolchains after starting jupyter notebook in JupyterLab.
+
+You can install the `jupyterlmod <https://github.com/cmd-ntrf/jupyter-lmod>`_  package in your python virtual environment on Terra which will allow you to load additional system modules that you may need or may have used during the creation of your virtual environment on Terra for use with the Terra Jupyter Notebook portal app.
+
+To add this feature to your existing Terra virtual environment, do the following on the command line prior to launching Jupyter Notebook on the portal (you can use Python/3.6.6-foss-2018b if the additional module(s) you need are not available with the intel-2018b toolchain):
+
+.. code-block:: php
+
+      module purge
+      module load Python/3.6.6-intel-2018b
+      source /scratch/user/mynetid/pip_envs/my_notebook-python-3.6.6-intel-2018b/bin/activate
+      pip install jupyter jupyterlmod
+      
+Then launch the Terra Jupyter Notebook portal app using your optional environment and click the 'Softwares' tab in your notebook and search for system modules.
+
+Select a module or multiple modules that match the toolchain and python version that you used in creating your virtual environment and then click enter to load the module.
+
+The 'Loaded Modules' list will update in a few seconds to reflect the additional module(s) loaded.
+
+You can save your modules loaded using the 'collection' button at the right side of the notebook 'softwares' page so that you just have to select the collection instead of searching for modules each time you want to use your python virtual environment.
+
+Anaconda
+////////
+
+Anaconda is different than Python's virtualenv in that you can install other types of software such as R and R packages in your environment.
+
+Anaconda also manages the installation path and installs in your $SCRATCH/.conda directory so you don't have to create a directory prior to creating an environment.
+
+The recommended Anaconda module to use for Python 3 is Anaconda/3-5.0.0.1
+
+To to create an Anaconda conda environment called my_notebook (you can name it whatever you like), do the following on the command line:
+
+
+      
