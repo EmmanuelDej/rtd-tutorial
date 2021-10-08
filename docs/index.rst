@@ -71,7 +71,7 @@ easily.
    hprc
    
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: User Guides
    
    grace
