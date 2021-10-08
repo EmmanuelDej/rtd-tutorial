@@ -396,7 +396,7 @@ To to create a Python virtual environment called my_notebook-python-3.6.6-intel-
 
 
 Default python virtualenv
-.........................
++++++++++++++++++++++++++
 
 You can create your own virtualenv to use with the JupyterLab portal app but in most cases the default virtualenv should work for you.
 
