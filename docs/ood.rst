@@ -494,3 +494,29 @@ Default Python version
 You can try installing an older version of a python package by searching available versions on anaconda.org and specify a specific version to install.
 
 For example, if you have Python 3.6.11 and numpy 1.19.2 and see the following error:
+
+
+.. code-block:: 
+      
+      import numpy
+
+      ModuleNotFoundError: No module named 'numpy.core._multiarray_umath'
+      
+Install an older version of numpy (the following command automatically overwrites the currently installed numpy version)
+
+.. code-block:: 
+      
+      conda install -c conda-forge numpy=1.15.4
+      
+In the above example, this resolved an 'import numpy' error in an environment with Python 3.6.11 with numpy 1.19.2 by downgrading numpy which also downgraded other packages:
+
+.. code-block:: 
+      
+      The following packages will be DOWNGRADED:
+
+            matplotlib:       3.3.2-0                  conda-forge --> 3.2.0-1                  conda-forge
+            matplotlib-base:  3.3.2-py36h2451756_0     conda-forge --> 3.2.0-py36h250f245_1     conda-forge
+            numpy:            1.19.2-py36he0f5f23_1    conda-forge --> 1.15.4-py36h8b7e671_1002 conda-forge
+            scipy:            1.5.2-py36h832618f_0     conda-forge --> 1.4.1-py36h921218d_0     conda-forge
+            
+         
