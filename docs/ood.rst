@@ -557,3 +557,59 @@ default notebook
 You can use a default Python virtual environment in the Spark Jupyter Notebook portal app by leaving the "Optional Python Environment to be activated" field blank.
 
 The default Spark notebook uses the module Spark/2.4.0-intel-2018b-Hadoop-2.7-Java-1.8-Python-3.6.6 and the following python packages jupyter, numpy, sklearn, pandas, seaborn, pyarrow
+
+create your own notebook
+////////////////////////
+
+You can create your own Spark Jupyter Notebook python virtual environment for use on the HPRC Portal but you must use the following module to create your Python virtualenv
+
+.. code-block:: php
+
+      GRACE:
+      module load iccifort/2019.5.281  impi/2018.5.288  Spark/2.4.5-Python-3.7.4-Java-1.8
+     
+.. code-block:: php
+
+      TERRA:
+      module load Spark/2.4.0-intel-2018b-Hadoop-2.7-Java-1.8-Python-3.6.6
+
+Notice that you will need to make sure you have enough available file quota (~10,000) since pip creates thousands of files.
+
+To create a Python virtual environment called my_spark_notebook-python-3.6.6-foss-2018b (you can name it whatever you like), do the following on the command line. You can save your virtual environments in any $SCRATCH directory you want. In this example a directory called /scratch/user/mynetid/pip_envs is used but you can use another name instead of pip_envs
+
+.. code-block:: php
+
+      mkdir -p /scratch/user/mynetid/pip_envs
+
+A good practice is to name your environment so that you can identify which Python version is in your virtualenv so that you know which module to load.
+
+The next three lines will create your virtual environment using the Spark module on Terra.
+
+.. code-block:: php
+
+      module purge
+      module load Spark/2.4.0-intel-2018b-Hadoop-2.7-Java-1.8-Python-3.6.6
+      export SPARK_HOME=$EBROOTSPARK
+      virtualenv /scratch/user/mynetid/pip_envs/my_spark_notebook-python-3.6.6-foss-2018b
+      
+Then you can activate the virtual environment by using the full path to the activate command inside your virtual environment and install Python packages.
+
+First install the required dependencies (jupyter, numpy, sklearn, pandas, seaborn, pyarrow) then you can install your additional packages.
+
+.. code-block:: php
+
+      source /scratch/user/mynetid/pip_envs/my_spark_notebook-python-3.6.6-foss-2018b/bin/activate
+      python3 -m pip install jupyter
+      python3 -m pip install numpy
+      python3 -m pip install sklearn
+      python3 -m pip install pandas
+      python3 -m pip install seaborn
+      python3 -m pip install pyarrow
+
+When you are finished installing your python packages, go to the Spark Jupyter Notebook portal app and enter the full path of your virtualenv in the field 'Optional Python Environment to be activated' such as /scratch/user/mynetid/pip_envs/my_spark_notebook-python-3.6.6-foss-2018b in this example.
+
+Additional Information
+----------------------
+Ohio Supercomputing Center has video for OOD at:
+
+ https://youtu.be/DfK7CppI-IU
