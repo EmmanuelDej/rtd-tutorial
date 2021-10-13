@@ -496,7 +496,7 @@ You can try installing an older version of a python package by searching availab
 For example, if you have Python 3.6.11 and numpy 1.19.2 and see the following error:
 
 
-.. code-block:: 
+.. code-block:: php
       
       import numpy
 
@@ -504,13 +504,13 @@ For example, if you have Python 3.6.11 and numpy 1.19.2 and see the following er
       
 Install an older version of numpy (the following command automatically overwrites the currently installed numpy version)
 
-.. code-block:: 
+.. code-block:: php
       
       conda install -c conda-forge numpy=1.15.4
       
 In the above example, this resolved an 'import numpy' error in an environment with Python 3.6.11 with numpy 1.19.2 by downgrading numpy which also downgraded other packages:
 
-.. code-block:: 
+.. code-block:: php
       
       The following packages will be DOWNGRADED:
 
@@ -520,3 +520,40 @@ In the above example, this resolved an 'import numpy' error in an environment wi
             scipy:            1.5.2-py36h832618f_0     conda-forge --> 1.4.1-py36h921218d_0     conda-forge
             
          
+Web Access
+//////////
+
+Jupyter Notebook runs on the compute nodes which do not have internet access.
+
+If you need internet access for your notebook then enable the proxy using the following.
+
+Terra
++++++
+
+Run the following lines in your notebook:
+
+.. code-block:: php
+      
+      import os
+      os.environ['http_proxy'] = '10.76.5.24:8080'
+      os.environ['https_proxy'] = '10.76.5.24:8080'
+      
+Grace
++++++
+
+Run the following lines in your notebook:
+
+.. code-block:: php
+      
+      import os
+      os.environ['http_proxy'] = '10.73.132.63:8080'
+      os.environ['https_proxy'] = '10.73.132.63:8080'
+      
+Spark Jupyter Notebook
+**********************
+
+default notebook
+////////////////
+You can use a default Python virtual environment in the Spark Jupyter Notebook portal app by leaving the "Optional Python Environment to be activated" field blank.
+
+The default Spark notebook uses the module Spark/2.4.0-intel-2018b-Hadoop-2.7-Java-1.8-Python-3.6.6 and the following python packages jupyter, numpy, sklearn, pandas, seaborn, pyarrow
