@@ -606,7 +606,7 @@ First install the required dependencies (jupyter, numpy, sklearn, pandas, seabor
       python3 -m pip install seaborn
       python3 -m pip install pyarrow
 
-When you are finished installing your python packages, go to the Spark Jupyter Notebook portal app and enter the full path of your virtualenv in the field 'Optional Python Environment to be activated' such as /scratch/user/mynetid/pip_envs/my_spark_notebook-python-3.6.6-foss-2018b in this example.
+When you are finished installing your python packages, go to the Spark Jupyter Notebook portal app and enter the full path of your virtualenv in the field 'Optional Python Environment to be activated' such as /scratch/user/mynetid/pip_envs/my_spark_notebook-python-3.6.6-foss-2018b in this example. 
 
 Additional Information
 ----------------------
